@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/html2canvas.js"></script>
+<script type="text/javascript" src="js/html2canvas.svg.js"></script>
+<script type="text/javascript" src="js/jquery.juanificate.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.juanificate.css">
+<link rel="stylesheet" type="text/css" href="css/juanificate.preload.css">
+
+</head>
+<body>
+
+<link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+<div id="indepth_content">
+	<div id="juanificate_preload"></div>
+	<div id="juanificate_cover" class="covers">
+		<div id="juanificate_cover_normal" class="covers">
+			<div class="cover_title">
+				¡JUANIFÍCATE!<br>
+				<span>
+					juanfutbol somos todos, literal. Padrotea como todo un Don Juan
+					y crea tu propia versión de mí ¿o de ti...? Haz lo que quieras.
+				</span>
+			</div>
+			<div class="cover_juanito"></div>
+			<div class="cover_btn">INICIAR</div>
+		</div>
+		<div id="juanificate_cover_book" class="covers">
+			<div class="cover_title"></div>
+			<div class="cover_juanito"></div>
+			<div class="cover_btn">INICIAR</div>
+		</div>
+	</div>
+	<div id="juanificate_gender" class="covers">
+		<div id="gender_container">
+			<div id="gender_title">
+				<span>ÉL</span>
+				<div id="o_title" class="gender_o"><span></span><div>O</div><span></span></div>
+				<span style="float: right;">ELLA</span>
+			</div>
+			<div id="gender_juanitos">
+				<div id="gender_el" class="gender_juanes" opcion="hombre"></div>
+				<div id="o_juanitos" class="gender_o"><span></span><div>O</div><span></span></div>
+				<div id="gender_ella" class="gender_juanes" opcion="mujer"></div>
+			</div>
+		</div>
+	</div>
+	<div id="juanificate_scheme">
+		<div id="juanificate_finish"></div>
+		<div id="juanificate_menu">
+			<div id="menu_indicator">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div id="menu_options">
+				<div class="option active special" id="option_mundial">
+					<div class="option_img"></div>
+					<div class="option_desc">LA GUÍA</div>
+				</div>
+				<div class="option" id="option_hair">
+					<div class="option_img"></div>
+					<div class="option_desc">CABELLO</div>
+				</div>
+				<div class="option" id="option_eyes">
+					<div class="option_img"></div>
+					<div class="option_desc">OJOS</div>
+				</div>
+				<div class="option" id="option_mouth">
+					<div class="option_img"></div>
+					<div class="option_desc">BOCA</div>
+				</div>
+				<div class="option" id="option_outfit">
+					<div class="option_img"></div>
+					<div class="option_desc">PLAYERA</div>
+				</div>
+				<div class="option" id="option_pants">
+					<div class="option_img"></div>
+					<div class="option_desc">PANTALONES</div>
+				</div>
+				<div class="option" id="option_shoes">
+					<div class="option_img"></div>
+					<div class="option_desc">TENIS</div>
+				</div>
+				<div class="option" id="option_background">
+					<div class="option_img"></div>
+					<div class="option_desc">ESCENARIO</div>
+				</div>
+			</div>
+		</div>
+		<div id="juanificate_tools">
+			<div id="tools_pagging">
+				<div class="arrows" id="top_arrow"></div>
+				<div id="pagging_indicator"></div>
+				<div class="arrows" id="bottom_arrow"></div>
+			</div>
+			<div id="tools_title">
+				<div id="tools_title_head">JUANIFÍCATE y ponte chido</div>
+				<div id="tools_title_tools">
+					<span></span>
+					<div>LA GUÍA</div>
+					<span></span>
+				</div>
+			</div>
+			<div id="tools_show">
+				<div id="tools_container"></div>
+			</div>
+			<div id="tools_separator"></div>
+			<div id="tools_colors">
+				<div id="colors_title">Escoger tu color</div>
+				<div id="colors_container">
+					<div class="colors active" id="color_1"></div>
+					<div class="colors" id="color_2"></div>
+					<div class="colors" id="color_3"></div>
+					<div class="colors" id="color_4"></div>
+				</div>
+			</div>
+			<div id="tools_btns">
+				<div class="btns" id="return_bnt"><span>REGRESAR</span></div>
+				<div class="btns" id="continue_btn"><span>CONTINUAR</span></div>
+			</div>
+		</div>
+		<div id="juanificate_canvas">
+			<div id="juanito_in">
+				<div class="juanito_elements" id="juanito_sample"></div>
+				<div class="juanito_elements" id="juanito_mouth"></div>
+				<div class="juanito_elements" id="juanito_eyes"></div>
+				<div class="juanito_elements" id="juanito_hair"></div>
+				<div class="juanito_elements" id="juanito_shoes"></div>
+				<div class="juanito_elements" id="juanito_outfit"></div>
+				<div class="juanito_elements" id="juanito_pants"></div>
+			</div>
+		</div>	
+	</div>
+	<div id="juanificate_result"></div>
+	<div id="juanificate_share">
+		<div id="share_close"><span>X</span></div>
+		<div id="share_title">
+			¡TE HAS JUANIFICADO!<br>
+			<span>AHORA, PRESÚMELO</span>
+		</div>
+		<div id="share_social">
+			<div class="share_separator">
+				<span></span>
+				<div>Compartir</div>
+				<span></span>
+			</div>
+			<a id="a_facebook" href=""><div class="indepth_share_item facebook"></div></a>
+			<a id="a_twitter" href=""><div class="indepth_share_item twitter"></div></a>
+		</div>
+		<div id="share_download">
+			<div class="share_separator">
+				<span></span>
+				<div>Descargar</div>
+				<span></span>
+			</div>
+			<a id="download_avatar"><div class="downloads">FOTO DE PERFIL</div></a><br>
+			<a id="download_wall"><div class="downloads">WALLPAPER</div></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
